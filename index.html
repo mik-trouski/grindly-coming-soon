@@ -4,24 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grindly – Coming Soon</title>
+
+  <!-- Favicon (emoji 🛹) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛹</text></svg>">
+
+  <!-- Basic SEO -->
+  <meta name="description" content="Grindly – Coming soon...">
+  <meta name="keywords" content="grindly, skateboarding, coming soon">
+  <meta name="author" content="Grindly">
+
   <style>
     body {
-      background: #111;
+      margin: 0;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
       color: #fff;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       text-align: center;
     }
-    h1 { font-size: 3rem; margin-bottom: 1rem; }
-    p { font-size: 1.2rem; opacity: 0.8; }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+    p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+      animation: fadeIn 3s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
   </style>
 </head>
 <body>
-  <h1>Grindly</h1>
+  <h1>🛹 Grindly</h1>
   <p>Coming Soon...</p>
+  <footer>© 2025 Grindly</footer>
 </body>
 </html>
